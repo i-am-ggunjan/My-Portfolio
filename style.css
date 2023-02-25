@@ -3,15 +3,19 @@
 /*? ======Color Part Start====== ?*/
 :root {
   --bg-black-900: #f2f2fc;
+  --bg-black-700: #cc0c2f;
+  --bg-black-500: #f0eeee;
   --bg-black-100: #fdf9ff;
   --bg-black-50: #e8dfec;
+  --text-black-100: #663399;
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
+
 }
 
 /*? ======Color Part End======= ?*/
 
-/*? =====Golbal Part Start===== ?*/
+/*? =====Global Part Start===== ?*/
 * {
   padding: 0;
   margin: 0;
@@ -26,7 +30,7 @@
   font-size: 10px;
 }
 
-/*? ======Golbal Part End====== ?*/
+/*? ======Global Part End====== ?*/
 
 /*? =====Common Part Start===== ?*/
 section {
@@ -49,7 +53,7 @@ main {
 }
 
 span {
-  color: rebeccapurple;
+  color: var(--text-black-100);
 }
 
 .padd-15 {
@@ -66,12 +70,12 @@ span {
   font-size: 14px;
   font-weight: 500;
   padding: 8px 28px;
-  color: white;
+  color: var(--bg-black-100);
   border-radius: 40px;
   display: inline-block;
   white-space: nowrap;
   border: none;
-  background: rebeccapurple;
+  background: var(--text-black-100);
   transition: all 0.3s ease;
 }
 
@@ -112,7 +116,7 @@ span {
 }
 
 .sub-header :nth-child(3) {
-  background-color: #cc0c2f;
+  background-color: var(--bg-black-700);
   height: 25%;
 }
 
@@ -125,13 +129,17 @@ span {
 
 /*? =====Header Part Start===== ?*/
 header {
-  background-color: rgb(240, 238, 238);
+  background-color: var(--bg-black-500);
   position: fixed;
   z-index: 1;
   top: 3vh;
   width: 100vw;
   color: var(--text-black-900);
   padding: 1vh 13vw;
+}
+
+header article {
+  padding: 0;
 }
 
 .hamburger {
@@ -152,7 +160,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: rebeccapurple;
+  color: var(--text-black-100);
 }
 
 /*? ======Header Part End====== ?*/
@@ -195,8 +203,8 @@ header nav ul li a:hover {
   position: absolute;
   height: 7rem;
   width: 7rem;
-  border-bottom: 0.8rem solid rebeccapurple;
-  border-right: 0.8rem solid rebeccapurple;
+  border-bottom: 0.8rem solid var(--text-black-100);
+  border-right: 0.8rem solid var(--text-black-100);
   right: 4rem;
   bottom: -4rem;
 }
@@ -206,8 +214,8 @@ header nav ul li a:hover {
   position: absolute;
   height: 7rem;
   width: 7rem;
-  border-top: 0.8rem solid rebeccapurple;
-  border-left: 0.8rem solid rebeccapurple;
+  border-top: 0.8rem solid var(--text-black-100);
+  border-left: 0.8rem solid var(--text-black-100);
   left: 4rem;
   top: -4rem;
 }
@@ -219,6 +227,49 @@ header nav ul li a:hover {
 }
 
 /*? ======Home Part End====== ?*/
+
+/*? ======Footer Part Start====== ?*/
+footer {
+  background-color: var(--bg-black-500);
+  width: 100vw;
+  color: var(--text-black-900);
+  padding: 1vh 13vw;
+}
+
+footer a {
+  color: var(--text-black-900);
+}
+
+footer article {
+  padding: 0;
+}
+
+footer article main {
+  margin: 5vh 0;
+}
+
+footer article :nth-child(1) {
+  gap: 2rem;
+}
+
+footer article :nth-child(2) {
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+footer .fab,
+.fas {
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+footer .fab:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 3px var(--text-black-100);
+}
+
+/*? ======Footer Part End====== ?*/
 
 /*? =======Media Query======= ?*/
 @media (max-width: 1150px) {
@@ -281,7 +332,6 @@ header nav ul li a:hover {
     position: absolute;
     margin-right: 10vw;
     width: 70vw;
-    /* bottom: 15vh; */
     bottom: -50vh;
     transition: all 2s;
     z-index: 1;
@@ -308,5 +358,17 @@ header nav ul li a:hover {
 
   .home article {
     padding: 50px 0;
+  }
+
+  footer {
+    margin-bottom: 14.2vh;
+  border-bottom: 2px solid var(--bg-black-700);
+  }
+}
+
+@media (max-width: 350px) {
+  footer article :nth-child(1) {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
