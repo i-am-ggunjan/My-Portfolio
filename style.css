@@ -10,7 +10,6 @@
   --text-black-100: #663399;
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
-
 }
 
 /*? ======Color Part End======= ?*/
@@ -361,8 +360,7 @@ footer .fab:hover {
   }
 
   footer {
-    margin-bottom: 14.2vh;
-  border-bottom: 2px solid var(--bg-black-700);
+    margin-bottom: 10vh;
   }
 }
 
