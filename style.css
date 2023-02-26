@@ -417,7 +417,9 @@ header nav ul li a:hover {
   padding-top: 150px;
   color: var(--text-black-900);
 }
-
+.contact article>h4 {
+  padding-bottom: 40px;
+}
 .contact h3 {
   color: var(--text-black-100);
   text-align: center;
@@ -429,7 +431,7 @@ header nav ul li a:hover {
   color: var(--text-black-900);
   text-align: center;
   font-size: 1.5rem;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 }
 
 .contact .contact-details {
@@ -644,6 +646,7 @@ footer .fab:hover {
 
   .contact article {
     padding: 50px 0;
+    padding-bottom: 0;
   }
 
   footer {
