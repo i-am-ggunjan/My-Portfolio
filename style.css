@@ -288,7 +288,6 @@ header nav ul li a:hover {
 
 .about .skills {
   flex-basis: 40%;
-  margin-top: 40px;
 }
 
 .about .skills h5 {
@@ -574,6 +573,9 @@ footer .fab:hover {
   .about .skills,
   .about .personal-details {
     flex-basis: 100%;
+  }
+  .about .personal-details {
+    margin-bottom: 40px;
   }
 
   .contact article {
