@@ -235,7 +235,7 @@ header nav ul li a:hover {
 
 /*? ======About Part Start====== ?*/
 .about article {
-  padding-top: 22vh;
+  padding-top: 100px;
   color: var(--text-black-900);
 }
 
@@ -563,6 +563,10 @@ footer .fab:hover {
     left: -30px;
   }
 
+  .about article {
+    padding-top: 100px;
+  }
+
   .about article main {
     flex-wrap: wrap;
   }
@@ -634,7 +638,7 @@ footer .fab:hover {
   }
 
   .about article {
-    padding: 50px 10vw;
+    padding: 25px 10vw;
   }
 
   .contact article {
