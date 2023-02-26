@@ -173,7 +173,8 @@ header nav ul li a:hover {
 
 /*? ======Home Part Start====== ?*/
 .home article {
-  padding-top: 35vh;
+  padding-top: 180px;
+  padding-bottom: 0;
   color: var(--text-black-900);
 }
 
@@ -546,7 +547,8 @@ footer .fab:hover {
 
 @media (max-width: 850px) {
   .home article {
-    padding: 130px 0 0 0;
+    padding-top: 130px;
+    padding-bottom: 50px;
   }
 
   .home main {
@@ -635,10 +637,12 @@ footer .fab:hover {
 
   .home article {
     padding: 50px 0;
+    padding-bottom: 30px;
   }
 
   .about article {
     padding: 25px 10vw;
+    padding-top: 0;
   }
 
   .contact article {
