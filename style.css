@@ -2,8 +2,9 @@
 
 /*? ======Color Part Start====== ?*/
 :root {
+  --bg-animation-700: #cc0c2f;
+  --bg-animation-900: #022145;
   --bg-black-900: #f2f2fc;
-  --bg-black-700: #cc0c2f;
   --bg-black-500: #f0eeee;
   --bg-black-100: #fdf9ff;
   --bg-black-50: #e8dfec;
@@ -61,12 +62,12 @@ span {
 }
 
 .name {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: "Clicker Script";
 }
 
 .btn {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   padding: 8px 28px;
   color: var(--bg-black-100);
@@ -105,7 +106,7 @@ span {
 }
 
 .sub-header :nth-child(1) {
-  background-color: #022145;
+  background-color: var(--bg-animation-900);
   height: 25%;
 }
 
@@ -115,12 +116,12 @@ span {
 }
 
 .sub-header :nth-child(3) {
-  background-color: var(--bg-black-700);
+  background-color: var(--bg-animation-700);
   height: 25%;
 }
 
 .sub-header :nth-child(4) {
-  background-color: #022145;
+  background-color: var(--bg-animation-900);
   height: 25%;
 }
 
@@ -145,6 +146,12 @@ header article {
   display: none;
   font-size: 3rem;
   color: var(--text-black-900);
+  border-radius: 50%;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 3px var(--bg-animation-700);
 }
 
 header nav ul {
@@ -155,7 +162,7 @@ header nav ul {
 
 header nav ul li a {
   color: var(--text-black-900);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 header nav ul li a:hover {
@@ -171,22 +178,22 @@ header nav ul li a:hover {
 }
 
 .home h3 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   margin: 2.5vh 0;
 }
 
 .home h3 .name {
-  font-size: 2.6rem;
+  font-size: 3rem;
 }
 
 .home h4 {
-  font-size: 2.43rem;
+  font-size: 3rem;
   margin: 2.5vh 0;
 }
 
 .home p {
   margin-bottom: 10vh;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: var(--text-black-700);
 }
 
@@ -224,7 +231,242 @@ header nav ul li a:hover {
   height: 22rem;
 }
 
-/*? ======Home Part End====== ?*/
+/*? =======Home Part End======== ?*/
+
+/*? ======About Part Start====== ?*/
+.about article {
+  padding-top: 22vh;
+  color: var(--text-black-900);
+}
+
+.about h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: var(--text-black-900);
+}
+
+.about p {
+  font-size: 1.6rem;
+  line-height: 25px;
+  color: var(--text-black-700);
+}
+
+.about .personal-details {
+  flex: 0 0 60%;
+  flex-basis: 60%;
+  margin-top: 40px;
+}
+
+.about .personal-details main {
+  flex-wrap: wrap;
+}
+
+.about .personal-details p {
+  flex: 0 0 50%;
+  flex-basis: 50%;
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 1.6rem;
+  color: var(--text-black-900);
+  border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .personal-details p span {
+  font-weight: 400;
+  color: var(--text-black-700);
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.about .personal-details .buttons {
+  margin-top: 30px;
+}
+
+.about .personal-details .buttons .btn {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.about .skills {
+  flex: 0 0 40%;
+  flex-basis: 40%;
+  margin-top: 40px;
+}
+
+.about .skills h5 {
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--text-black-900);
+  text-transform: capitalize;
+}
+
+.about .skills .progress {
+  background-color: var(--bg-black-50);
+  height: 7px;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.about .skills {
+  margin-bottom: 14px;
+}
+
+.about .skills .progress .progress-in {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 4px;
+  background-color: var(--text-black-100);
+}
+
+.about .skills .skill-percent {
+  position: absolute;
+  right: 0;
+  color: var(--text-black-900);
+  top: -40px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.about main {
+  align-items: normal;
+}
+
+.about .education,
+.about .experience {
+  flex-basis: 50%;
+  margin-top: 50px;
+}
+
+.about h3 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: var(--text-black-900);
+}
+
+.about .timeline {
+  background-color: var(--bg-black-100);
+  padding: 30px 15px;
+  border: 1px solid var(--bg-black-50);
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.about .timeline .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+
+.about .timeline .timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.about .timeline .timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: var(--text-black-100);
+}
+
+.about .timeline .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--text-black-100);
+}
+
+.about .timeline .icon {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 12px;
+  color: var(--text-black-700);
+}
+
+.about .timeline .icon .fa {
+  margin-right: 5px;
+}
+
+.about .timeline h4 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: var(--text-black-900);
+}
+
+.about .timeline p {
+  line-height: 25px;
+  font-size: 1.6rem;
+  text-align: justify;
+  color: var(--text-black-700);
+}
+
+/*? =======About Part End======= ?*/
+
+/*? =====Contact Part Start====== ?*/
+.contact article {
+  padding-top: 150px;
+  color: var(--text-black-900);
+}
+
+.contact h3 {
+  color: var(--text-black-100);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact h4 {
+  color: var(--text-black-900);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+}
+
+.contact .contact-details {
+  flex: 0 0 25%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact .contact-details .icon {
+  display: inline-block;
+}
+
+.contact .contact-details .icon .fa {
+  font-size: 2.5rem;
+  color: var(--text-black-100);
+}
+
+.contact .contact-details h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-black-900);
+  text-transform: capitalize;
+  margin: 15px 0 5px;
+}
+
+.contact .contact-details p {
+  font-size: 1.6rem;
+  line-height: 25px;
+  color: var(--text-black-700);
+  font-weight: 400;
+}
+
+/*? ======Contact Part End======= ?*/
 
 /*? ======Footer Part Start====== ?*/
 footer {
@@ -257,7 +499,7 @@ footer article :nth-child(2) {
 
 footer .fab,
 .fas {
-  font-size: 2rem;
+  font-size: 3rem;
   transition: all 0.3s ease;
   border-radius: 50%;
 }
@@ -271,6 +513,10 @@ footer .fab:hover {
 
 /*? =======Media Query======= ?*/
 @media (max-width: 1150px) {
+  :root {
+    font-size: 9px;
+  }
+
   .home-img::after {
     right: 0px;
     bottom: -35px;
@@ -283,6 +529,10 @@ footer .fab:hover {
 }
 
 @media (max-width: 1000px) {
+  :root {
+    font-size: 8px;
+  }
+
   .home-img::after {
     right: -15px;
     bottom: -30px;
@@ -296,7 +546,7 @@ footer .fab:hover {
 
 @media (max-width: 850px) {
   .home article {
-    padding: 130px 0;
+    padding: 130px 0 0 0;
   }
 
   .home main {
@@ -306,11 +556,36 @@ footer .fab:hover {
   }
 
   .home-img::after {
-    right: -3rem;
+    right: -30px;
   }
 
   .home-img::before {
-    left: -3rem;
+    left: -30px;
+  }
+
+  .about article main {
+    flex-wrap: wrap;
+  }
+
+  .about .experience,
+  .about .education,
+  .about .skills,
+  .about .personal-details {
+    flex-basis: 100%;
+  }
+
+  .contact article {
+    padding-top: 150px;
+    padding-bottom: 1px;
+  }
+
+  .contact main {
+    flex-wrap: wrap;
+  }
+
+  .contact .contact-details {
+    flex-basis: 50%;
+    flex-grow: 1;
   }
 }
 
@@ -358,8 +633,26 @@ footer .fab:hover {
     padding: 50px 0;
   }
 
+  .about article {
+    padding: 50px 10vw;
+  }
+
+  .contact article {
+    padding: 50px 0;
+  }
+
   footer {
     margin-bottom: 10vh;
+  }
+}
+
+@media (max-width: 550px) {
+  :root {
+    font-size: 7px;
+  }
+
+  .about article {
+    padding: 50px 5vw;
   }
 }
 
