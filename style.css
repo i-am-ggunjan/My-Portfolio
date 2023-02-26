@@ -191,8 +191,7 @@ header nav ul li a:hover {
 }
 
 .home-img {
-  flex: 0 0 40%;
-  /* max-width: 40%; */
+  flex-basis: 40%;
   text-align: center;
   position: relative;
 }
@@ -200,23 +199,23 @@ header nav ul li a:hover {
 .home-img::after {
   content: "";
   position: absolute;
-  height: 7rem;
-  width: 7rem;
-  border-bottom: 0.8rem solid var(--text-black-100);
-  border-right: 0.8rem solid var(--text-black-100);
-  right: 4rem;
-  bottom: -4rem;
+  height: 70px;
+  width: 70px;
+  border-bottom: 8px solid var(--text-black-100);
+  border-right: 8px solid var(--text-black-100);
+  right: 40px;
+  bottom: -40px;
 }
 
 .home-img::before {
   content: "";
   position: absolute;
-  height: 7rem;
-  width: 7rem;
-  border-top: 0.8rem solid var(--text-black-100);
-  border-left: 0.8rem solid var(--text-black-100);
-  left: 4rem;
-  top: -4rem;
+  height: 70px;
+  width: 70px;
+  border-top: 8px solid var(--text-black-100);
+  border-left: 8px solid var(--text-black-100);
+  left: 40px;
+  top: -40px;
 }
 
 .home-img img {
@@ -273,25 +272,25 @@ footer .fab:hover {
 /*? =======Media Query======= ?*/
 @media (max-width: 1150px) {
   .home-img::after {
-    right: 0rem;
-    bottom: -3.5rem;
+    right: 0px;
+    bottom: -35px;
   }
 
   .home-img::before {
-    left: 0rem;
-    top: -4rem;
+    left: 0px;
+    top: -40px;
   }
 }
 
 @media (max-width: 1000px) {
   .home-img::after {
-    right: -1.5rem;
-    bottom: -3rem;
+    right: -15px;
+    bottom: -30px;
   }
 
   .home-img::before {
-    left: -1.5rem;
-    top: -3.5rem;
+    left: -15px;
+    top: -35px;
   }
 }
 
