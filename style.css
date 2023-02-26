@@ -236,7 +236,7 @@ header nav ul li a:hover {
 
 /*? ======About Part Start====== ?*/
 .about article {
-  padding-top: 100px;
+  padding-top: 140px;
   color: var(--text-black-900);
 }
 
@@ -254,9 +254,7 @@ header nav ul li a:hover {
 }
 
 .about .personal-details {
-  flex: 0 0 60%;
   flex-basis: 60%;
-  margin-top: 40px;
 }
 
 .about .personal-details main {
@@ -264,7 +262,6 @@ header nav ul li a:hover {
 }
 
 .about .personal-details p {
-  flex: 0 0 50%;
   flex-basis: 50%;
   font-weight: 600;
   padding: 10px 0;
@@ -290,7 +287,6 @@ header nav ul li a:hover {
 }
 
 .about .skills {
-  flex: 0 0 40%;
   flex-basis: 40%;
   margin-top: 40px;
 }
