@@ -417,9 +417,11 @@ header nav ul li a:hover {
   padding-top: 150px;
   color: var(--text-black-900);
 }
+
 .contact article>h4 {
   padding-bottom: 40px;
 }
+
 .contact h3 {
   color: var(--text-black-100);
   text-align: center;
@@ -576,6 +578,7 @@ footer .fab:hover {
   .about .personal-details {
     flex-basis: 100%;
   }
+
   .about .personal-details {
     margin-bottom: 40px;
   }
@@ -661,6 +664,12 @@ footer .fab:hover {
 
   .about article {
     padding: 50px 5vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .about article {
+    padding: 50px 0;
   }
 }
 
